@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-//public class ack {
+public class ack {
   
   //public static void main(String[] args){
   //ack();
@@ -33,12 +33,13 @@ import java.util.*;
     public static int RecursiveAckerman(int m, int n) {
         if (m == 0) {
             return (n + 1);
-        } else if (m == 0) {
+        } else if (m > 0 && n == 0) {
             return RecursiveAckerman(m - 1, 1);
-        } else {
+        } else ( m > 0 && n > 0) {
             return RecursiveAckerman(m - 1, RecursiveAckerman(m, n - 1));
         }
     }
+
 
     public static int NonRecursiveAckerman(int m, int n) {
         Stack<Integer> stack = new Stack<Integer>();
