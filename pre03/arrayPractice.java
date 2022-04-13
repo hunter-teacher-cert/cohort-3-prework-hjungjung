@@ -1,14 +1,12 @@
 import java.io.*;
 import java.util.*;
 
-public class Array {
+public class arrayPractice {
 
   public static void main(String[] args){
-    arrLength();
     powArray();
-    //double b = 12.0;
+    
     int[] a = {1, 2, 3, 4};
-    int[] scores = new int[5];
     //System.out.println(a);
     printArray(a);
     accessElements();
@@ -17,32 +15,15 @@ public class Array {
     //arrayLength();
   
   }
-  
-  public static void arrLength(){
-    int[] arr = new int[5];
-    int arrayLength = arr.length;
-    System.out.println("The length of the array is:" + arrayLength);
-  }
-  
+
   public static void powArray(){
-      //double a = 30;
-      //double b = 2;
-      //System.out.println(Math.pow(a,b));
-      double[] b = new double[5];
-      b[0] = 2;
-      b[1] = 3;
-      b[2] = 4;
-      b[3] = 5;
-      b[4] = 6;
-      for (int i=0; i < b.length; i++){
-        b[i] = Math.pow(b[i],2.0);
-        System.out.println(b[i] );
-      }
-      //System.out.println(Arrays.toString(b));
-  
-   }
-   
-  
+    double[] b = new double[a.length];
+    for (int i = 0; i < a.length; i++){
+      b[i] = Math.pow(b[i], 2.0);
+      System.out.println(b[i]);
+    }
+    //return a;
+  }
   
   //display the elements of the array:
   public static void printArray(int[] a){
@@ -53,8 +34,8 @@ public class Array {
     System.out.println("}");
     
     //using a utility class java.util.Arrays
-    //One of them, toString, returns a string representation of an array.
-    System.out.println(Arrays.toString(a) + "->" + "using a Utility class, a string representation of an array");
+    //One of them, toString, returns a tring representation of an array.
+    System.out.println(Arrays.toString(a) + "," + "using Util");
   }
   
 
@@ -85,9 +66,6 @@ public class Array {
   
   }
 
-
-
-  
   //I is for "integer," and the rest represents the address of the array.
   //public static void displayArrays(){
     //int[] a ={1,2,3,4};

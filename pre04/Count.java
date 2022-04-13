@@ -1,17 +1,17 @@
 import java.io.*;
 import java.util.*;
 
-//Recursive methods ??
+
 public class Count {
   public static void main(String[] args){
-    nLines();
+    nLines(3);
   }
 
-  public static void nLines(){
-    int n;
-    n = 3;
+  public static void nLines(int n){
+    //int n;
+    //n = 3;
     if (n > 0){
-      System.out.println();
+      System.out.println(n);
       nLines (n - 1);
     }
   }
