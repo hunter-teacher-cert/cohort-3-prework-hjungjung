@@ -5,7 +5,7 @@ public class arrayPractice {
 
   public static void main(String[] args){
     powArray();
-    
+      
     int[] a = {1, 2, 3, 4};
     //System.out.println(a);
     printArray(a);
@@ -17,13 +17,16 @@ public class arrayPractice {
   }
 
   public static void powArray(){
+    double[] a = new double[3];
     double[] b = new double[a.length];
     for (int i = 0; i < a.length; i++){
       b[i] = Math.pow(b[i], 2.0);
       System.out.println(b[i]);
     }
-    //return a;
+    //return b;
+    
   }
+
   
   //display the elements of the array:
   public static void printArray(int[] a){
